@@ -1,4 +1,5 @@
 import { Component } from "react";
+import "./filmsListStyle.css";
 
 class FilmsList extends Component {
   constructor(props) {
@@ -22,9 +23,12 @@ class FilmsList extends Component {
 
   render() {
     return (
-      <ul>
+      <ul className="tileGrid">
         {this.state.list.map((film) => {
-          return <li key={film.id}>{film.title}</li>;
+          return <li key={film.id}>
+          <h2>{film.title}</h2>
+            <img src={`${film.image}`} alt="Film Poster" />
+          </li>;
         })}
       </ul>
     );

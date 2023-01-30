@@ -1,0 +1,19 @@
+body {
+    background-color: #282c34;
+    color: white;
+}
+
+
+.tileGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+
