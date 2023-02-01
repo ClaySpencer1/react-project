@@ -20,7 +20,6 @@ function App(props) {
         <Route path="/" element={<HomePage />} />
         <Route path="films" element={<FilmsPage />} />
       </Routes>
-      <FilmsList />
     </BrowserRouter>
   );
 }

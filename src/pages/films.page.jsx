@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { filterFilmsByDirector, getListOf } from "../helpers/film.helpers";
+import FilmsList from "../components/filmsList";
+
 
 function FilmsPage(props) {
   let [list, setList] = useState([]);
@@ -45,7 +47,9 @@ function FilmsPage(props) {
           return <li key={film.id}>{film.title}</li>;
         })}
       </ul>
+      <FilmsList />
     </div>
+    
   );
 }
 
