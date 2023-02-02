@@ -25,6 +25,7 @@ function FilmsPage(props) {
     <div>
       <h1>Studio Ghibli Films</h1>
       <form>
+        <div className="form-group">
         <label htmlFor="searchDirector">Filter By Director</label>
         <select
           name="searchDirector"
@@ -41,6 +42,7 @@ function FilmsPage(props) {
             );
           })}
         </select>
+        </div>
       </form>
       <ul>
         {filmsByDirector.map((film) => {
